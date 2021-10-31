@@ -27,4 +27,29 @@ notify.addEventListener( 'click', () => {
 	});
 } );
 
+// let flightsThatAreIn = document.getElementsByClassName("_2Hlwf3wYFGRM0I_xFodhNp _17BWc-TdIq3Hsx3wjE3lw6 _26ULLRwOqrFwdQUoFGDEP4 _1QZeLwax7Um-pPGe2xRTV3");
+// function getFlightsIn() {
+//     for (i = 0; i < flightsThatAreIn.length; i++) {
+//         console.log(flightsThatAreIn[i].innerHTML)
+//     }
+// }
+
+
+let lateArrivalTime = document.getElementsByClassName("turn-schedule__flight-time-estimated late");
+let scheduledArrivalTime = document.getElementsByClassName("turn-schedule__flight-time-scheduled late");
+let flightData = document.querySelector('.turn-schedule__flight-number');
+// let prevSiblings = flightData.previousElementSibling;
+function getLateFlights() {
+    for (i = 0; i < lateArrivalTime.length; i++) {
+        // console.log(`This flight is LATE: FLT#` ${})
+        console.log(`Late Arrival Time ${lateArrivalTime[i].innerHTML} is late`);
+        // console.log(prevSiblings)
+        console.log(`Original Scheduled Arrival Time: ${scheduledArrivalTime[i].innerHTML}`);
+        
+        // Do math here to detect how many minutes late it is.
+    }
+}
+
+// Run Connection Flight search function
+getLateFlights()
 

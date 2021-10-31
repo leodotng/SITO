@@ -4,13 +4,30 @@
 	"version": "1.0",
 	"manifest_version": 3,
 	"permissions": [
+		"tabs",
 		"contextMenus",
 		"notifications",
-		"storage"
+		"storage",
+		"http://*/",
+      "https://*/",
+		"activeTab",
+    	"clipboardWrite"
 	],
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+  },
+	"host_permissions": [
+		"https://opssuitemain.swacorp.com/*"
+  ],
 	"background": {
-	  "service_worker": "background.js"
+	  "service_worker": "background.js",
+	  "scripts": ["background.js"]
 	},
+	"content_scripts": [{
+		"matches": ["file:///*"],
+		"js":      ["content.js"]
+  }],
 	"action": {
 	  "default_popup": "popup.html",
 	  "default_icon": {
