@@ -1,6 +1,6 @@
 {
-	"name": "Notify!",
-	"description": "A Google Chrome extension!",
+	"name": "SITO.FLIGHTS",
+	"description": "Enhanced toolset for DEN command center opssuite.",
 	"version": "1.0",
 	"manifest_version": 3,
 	"permissions": [

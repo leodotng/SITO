@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html>
 	<head>
+			<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="use-credentials"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+			<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 		<link rel="stylesheet" href="assets/css/popup.css">
 	</head>
 	<body>
-	 <div id="notify-wrapper">
-		<div id="notify-header">
-			<h1>Notify!</h1>
+	 <div class="text-colors-page" id="notify-wrapper">
+		<div class ="text-colors-header" id="notify-header">
+			<h1>SITO.FLIGHTS</h1>
 		</div>
 		<div id="notify-containers">
 			<div class="notify-form">
-				<label for="text">Notification</label>
-				<textarea name="text" id="notify-text" placeholder="Let's notify!"></textarea>
+				<label for="text">Opssuite Tools</label>
+
+				<button class="ui orange button mini">
+					Holdout
+				 </button>
+
+				 <div class="ui.menu item">
+				<div>getAllCrewIssues </div>
+
+
+
+				<div>getAllLateConnectionFlights </div>
+
+
+				<div>dismissAllAcknowledgeButtons</div>
+
+ <div>Get all Holdout issues</div>
+				<!-- <textarea name="text" id="notify-text" placeholder="Let's notify!"></textarea> -->
 			</div>
-			<div class=notify-buttons>
+			<div class="">
 				<p>Total: <span id="notify-count"></span></p>
 
-				<button class="button" id="notify-reset">
+				<button class="ui orange button mini">
 					Reset
 				</button>
-				<button class="button primary" id="notify-button">
+				<button class="ui orange button mini">
 					Notify!
 				</button>
+			</div>
 			</div>
 		</div>
 	 </div>

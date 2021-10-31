@@ -26,3 +26,5 @@ notify.addEventListener( 'click', () => {
 		message: text.value
 	});
 } );
+
+
